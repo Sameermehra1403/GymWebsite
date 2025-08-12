@@ -1,0 +1,126 @@
+body 
+{
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 1px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+/*  NAVBAR  */
+.navbar-brand {
+  color: #FF2E63 !important;
+  font-size: 32px;
+}
+
+.nav-link {
+  color: #ccc !important;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #FF2E63 !important;
+}
+
+/*  HERO  */
+section.vh-100 {
+  position: relative;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+section.vh-100::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+section.vh-100 .container {
+  position: relative;
+  z-index: 2;
+}
+
+/*  ABOUT SECTION  */
+.bg-secondary {
+  background-color: #333 !important;
+}
+
+/*  CARDS (Programs)  */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/*  TESTIMONIALS  */
+blockquote {
+  font-style: italic;
+  background: #1f1f1f;
+  padding: 20px;
+  border-left: 5px solid #FF2E63;
+  border-radius: 5px;
+}
+
+/*  FOOTER  */
+footer {
+  border-top: 1px solid #333;
+  font-size: 14px;
+}
+
+/*  BUTTONS  */
+.btn-danger {
+  background-color: #FF2E63;
+  border: none;
+}
+
+.btn-outline-light:hover {
+  background-color: #FF2E63;
+  color: grey;
+}
+
+.btn-light:hover {
+  background-color: white;
+  color: #121212;
+}
+
+/*  RESPONSIVE FIXES  */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 26px;
+  }
+
+  h1.display-3 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: rgb(198 206 214 / 75%) !important;
+}
